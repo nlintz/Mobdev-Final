@@ -1,0 +1,28 @@
+!!!5
+html
+    head
+        title #{title} - Mobdev Visualizer
+        link(rel='stylesheet', href='/stylesheets/style.css')
+        link(rel='stylesheet', href='/stylesheets/bootstrap-responsive.min.css')
+
+        link(rel='stylesheet', href='//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css')
+    body
+    div.container
+        div.navbar
+            div.navbar-inner
+                a.brand Photo Music Visualizer
+                ul.nav
+                    li
+                        a Change Song
+                    li
+                        a Change Transience
+                    li
+                        a Load Images
+
+        block content
+        footer
+            p Running on node with Express and Jade
+            p Created by Nathan Lintz
+        scripts
+            block scripts
+            

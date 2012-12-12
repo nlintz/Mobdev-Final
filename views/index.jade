@@ -1,0 +1,14 @@
+extend layout
+block content
+    img(src = imgURL, align:"center", id='images').bg
+
+    audio(preload="auto", autobuffer)
+        source(src= audioURL, autoplay='true',type="audio/mpeg")
+block scripts
+    .scripts
+        script(type='text/javascript', src='http://code.jquery.com/jquery-latest.min.js')    
+        script(type='text/javascript', src = scriptURL)
+        script(type='text/javascript', src = '/javascripts/bootstrap.min.js')
+        script(type='text/javascript', src = '/javascripts/bootstrap-dropdown.js')
+        #data #{Timings}
+        #imageData #{ImageArray}
